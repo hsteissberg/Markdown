@@ -25,41 +25,18 @@ FRESCO™ extends ARAMS™ and TREECS™ capabilities for modeling fate and tran
 * Explain that some of the issues are bug reports, then list the issues [Word table], then reference the GitHub site 
 * Summarize status – x debug issues, % open/closed 
  
-
 ### Task 2 – Test and evaluate 
+* Explain that some of the issues are feature requests, then list those issues, then reference GitHub 
+* Installation package is an important issue that  
+* Summarize the status 
 
-- Explain that some of the issues are feature requests, then list those issues, then reference GitHub 
-- Installation package is an important issue that  
-- Summarize the status 
-
+### Task 3 – Validate  
+* Explain that validation is running certain test cases in both TREECS (predecessor) and FRESCO to make sure results are the same. 
+ * List the test cases 
+ * Summarize status 
  
-
-Task 3 – Validate 
- 
-Explain that validation is running certain test cases in both TREECS (predecessor) and FRESCO to make sure results are the same. 
- 
-List the test cases 
- 
-Summarize status 
- 
- 
-
-Conclusion/Wrapup/End Note/Comment 
- 
-Summary of status overall 
- 
-Next steps 
- 
-Known deficiencies/limitations 
- 
-
-Some modules still to be converted from VB6 to C# 
-
-? 
- 
-
- 
-
- 
-
- 
+### Conclusion/Wrapup/End Note/Comment 
+* Summary of status overall 
+* Next steps 
+* Known deficiencies/limitations 
+* Some modules still to be converted from VB6 to C# 
