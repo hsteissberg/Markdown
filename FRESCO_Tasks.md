@@ -1,3 +1,20 @@
+## Project summary  
+* Updating codebase for future maintainability 
+* Add new features 
+* Document 
+
+## Development and code management overview 
+* Use of Github 
+* List tools and libraries 
+* Visual Studio (C#, limited C++) 
+* Installshield 
+
+## Components and organization 
+* FRESCO v. FRAMES 
+* Modules with details 
+* Repositories 
+* Issues and Projects (LimnoTech/FRESCO repository 
+
 ### Task 1 – Debug 
 * Explain that some of the issues are bug reports, then list the issues [Word table], then reference the GitHub site 
 * Summarize status – x debug issues, % open/closed 
