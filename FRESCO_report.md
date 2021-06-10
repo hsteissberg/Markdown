@@ -4,7 +4,7 @@ The U.S. Army has a continuing need to understand human and environmental health
 ## Understanding Risks 
 FRESCO™ extends ARAMS™ and TREECS™ capabilities for modeling fate and transport of MRCs and MCs to establish media concentrations for comparison to risk-based screening levels (Level 1 risk assessment). The extended capabilities are being implemented in concert with modernization of the supporting data, the codebase ⸺ including the underlying Framework for Risk Analysis in Multimedia Environmental Systems (FRAMES) modeling framework developed at the Department of Energy’s Pacific Northwest National Laboratory (PNNL) ⸺ and documentation to deliver a sustainable and reliable platform for MC/MRC risk assessment for the long term. 
 
-## Project summary [Go to File] (INSERT URL)
+# Project summary and Tasks[Go to File] (INSERT URL)
 * Updating codebase for future maintainability 
 * Add new features 
 * Document 
@@ -20,6 +20,8 @@ FRESCO™ extends ARAMS™ and TREECS™ capabilities for modeling fate and tran
 * Modules with details 
 * Repositories 
 * Issues and Projects (LimnoTech/FRESCO repository 
+
+## Tasks
 
 ### Task 1 – Debug 
 * Explain that some of the issues are bug reports, then list the issues [Word table], then reference the GitHub site 
