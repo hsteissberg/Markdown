@@ -8,7 +8,6 @@
 LimnoTech<br/>
 6/23/2021
 
-
 <div style="page-break-after: always;"></div>
 
 # Introduction
@@ -55,6 +54,8 @@ The development technology stack is informed by the targeted delivery of FRESCO 
 The various components (executables, libraries, help files, and data files) are combined into an installation package using Revenera InstallShield 2020 ***Rx*** Professional. The InstallShield configuration file is included as part of ***FRESCO REPO? SEPARATE REPO?***. 
 
 
+<div style="page-break-after: always;"></div>
+
 # Components and organization 
 
 *History lesson -- FRAMES -> ARAMS -> TREECS*
@@ -65,6 +66,8 @@ The various components (executables, libraries, help files, and data files) are 
 
 *Directory organization in install?*
 
+
+<div style="page-break-after: always;"></div>
 
 # Task 1 – Debugging 
 
@@ -86,6 +89,8 @@ Under this task, LimnoTech perform debugging of the framework, models, and compo
 | 86    | RECOVERY not running                                                                                                 | tslawecki          | bug                 | open          |                         | 2021-05-20T17:14:21Z |
 
 
+<div style="page-break-after: always;"></div>
+
 # Task 2 – Test and evaluate 
 
 *Intro text recapping scope of task*
@@ -95,12 +100,16 @@ Under this task, LimnoTech perform debugging of the framework, models, and compo
 *THESE ARE NON-BUG ISSUES*
 
 
+<div style="page-break-after: always;"></div>
+
 # Task 3 – Validate  
 
 *Intro text recapping scope of task*
 
 **==== LIST OF VALIDATION TESTS (TREECS PROJECTS RUN UNDER FRESCO AND COMPARED) HERE**
 
+
+<div style="page-break-after: always;"></div>
 
 # Summary and next steps
 
