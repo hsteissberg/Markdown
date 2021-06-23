@@ -24,9 +24,60 @@ Deliverables for this order include updated code as well as documentation of the
 <div style="page-break-after: always;"></div>
 
 # Overview of Code Development and Management
-The FRESCO development process is built around the GitHub development platform (https://github.com/about). GitHub repositories are used to store and version-track the source code and other components of the FRESCO system, and to organize debugginng and development activity. Because of the complexity of FRESCO and its components, activities such 
+The FRESCO development process is built around the GitHub development platform (https://github.com/about). GitHub repositories are used to store and version-track the source code and other components of the FRESCO system, and to organize debugginng and development activity. Because of the complexity of FRESCO and its components, the source code, help contens, and other files are distributed across the following individual repositories:
+
+**==== LIST OF REPOSITORIES HERE**
+
+A snapshot of the contents of these repositories as of *xx/xx/2021* is available at *URL*. The snapshot is a ZIP archive file containing individual ZIP archive files for each repository.
+
+The main repository for FRESCO is at https://github.com/LimnoTech/FRESCO, and includes GitHub Milestones, Projects, and Issues used to manage the development process. 
+
+The development technology stack is informed by the targeted delivery of FRESCO as a desktop program executable on a Microsoft Windows 10 workstation. The FRESCO user interace is primarily implemented in Microsoft C#.NET (UI), but in version 1.0 still includes some legacy components written in Microsoft Visuabl Basic 6 and in Microsoft or Borland C++. The primary development platform is therefore Microsoft Visual Studio 2019 (Community Edition) (***VERSION NUMBER***). Key dependencies are:
+
+* R
+* MapWindows
+* Spread FarPoint
+* ***OTHERS?***
+
+The various components (executables, libraries, help files, and data files) are combined into an installation package using Revenera InstallShield 2020 ***Rx*** Professional. The InstallShield configuration file is included as part of ***FRESCO REPO? SEPARATE REPO?***. 
+
+
 # Components and organization 
+
+*History lesson -- FRAMES -> ARAMS -> TREECS*
+
+*GitHub Projects*
+
+**==== LIST 0.1, 1.0, and 1.1 FUNCTIONALITY ISSUES**
+
+*Directory organization in install?*
+
+
 # Task 1 – Debugging 
+
+*Intro text recapping scope of task*
+
+**==== LIST OF DEBUGGING ISSUES FROM GITHUB HERE**
+
+
 # Task 2 – Test and evaluate 
+
+*Intro text recapping scope of task*
+
+**==== LIST OF TESTING/EVALUATION ISSUES FROM GITHUB HERE**
+
+*THESE ARE NON-BUG ISSUES*
+
+
 # Task 3 – Validate  
+
+*Intro text recapping scope of task*
+
+**==== LIST OF VALIDATION TESTS (TREECS PROJECTS RUN UNDER FRESCO AND COMPARED) HERE**
+
+
 # Summary and next steps
+
+Abbreviated recap of Tasks 1-3
+
+Next steps - move to 1.1, hanging chads, test case study
