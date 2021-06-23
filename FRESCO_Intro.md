@@ -55,9 +55,22 @@ The various components (executables, libraries, help files, and data files) are 
 
 # Task 1 – Debugging 
 
-*Intro text recapping scope of task*
+Under this task, LimnoTech perform debugging of the framework, models, and components to ensure correct operation consistent with similar operations conducted with the predecessor model TREECS. Correct operation was evaluated for a number of individual actions and for complete scenarios in a manner informed by SME Mark Dortch. When incorect operations were identified, issues labeled as "bug" were created in GitHub and used to track mitigation and confirmation of corrections. The table below lists the debugging issues identified and corrected during the course of this delivery order.
 
-**==== LIST OF DEBUGGING ISSUES FROM GITHUB HERE**
+
+*Table: FRESCO GitHub Issues tagged as "bug" (illustrative)*
+
+| Issue # | Issue Title | User Name | Labels | State | Milestone | Date Created |
+|--|--|--|--|--|--|--|
+| 16    | New folk add an issue                                                                                                | tslawecki          | bug                 | open          | FRESCO v 0.1            | 2020-12-23T18:01:06Z |
+| 45    | Plotting hydrologic time series in Excel locks up                                                                    | tslawecki          | bug                 | open          | FRESCO v 1.0            | 2021-01-07T18:01:45Z |
+| 47    | Minor error warnings when save a .trp file in a directory with another .trp file                                     | MarkDortch         | bug                 | open          | FRESCO v 1.0            | 2021-01-14T17:15:52Z |
+| 54    | WFF Surface Water and Aquifer Percent Plus Operator                                                                  | MarkDortch         | bug                 | open          |                         | 2021-01-30T19:38:15Z |
+| 55    | Potential bug when linking MEPAS human exposure module to the TREECS source loading/Tier 2 soil model within FRAMES. | MarkDortch         | bug                 | open          |                         | 2021-02-02T00:47:59Z |
+| 56    | Potential bug associated with MEPAS source in soil model UI in FRESCO/FRAMES                                         | MarkDortch         | bug                 | open          |                         | 2021-02-02T00:53:56Z |
+| 58    | Resurfacing SU issue?                                                                                                | tslawecki          | bug                 | open          | FRESCO v 1.0            | 2021-02-18T12:44:38Z |
+| 85    | Vadose and Aquifer Model UI                                                                                          | tslawecki          | bug                 | closed        |                         | 2021-05-20T16:31:18Z |
+| 86    | RECOVERY not running                                                                                                 | tslawecki          | bug                 | open          |                         | 2021-05-20T17:14:21Z |
 
 
 # Task 2 – Test and evaluate 
