@@ -1,14 +1,16 @@
-# Documentation of Activities
+# **DRAFT** Documentation of Activities
 ## Delivery Order W912HZ20F0209/Contract W912HZ-20-D-0004
 
 ## *Conduct FRESCO Framework & Model Debugging, Perform Model Evaluations and Validation*
 <br/>
 <br/>
 <br/>
-LimnoTech<br/>
-6/23/2021
+<br/>
+6/23/2021<br/>
+<br/>
+<img src="images/00_Limno_Official_Logo.jpg" style="vertical-align: bottom;" width=300>
 
-<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"/>
 
 # Introduction
 The U.S. Army has a continuing need to understand human and environmental health risks associated with military-relevant compounds (MRCs) and with movement off-site of range munition constituents (MCs). The U.S. Army Engineer Research and Development Center is now developing a renewed product ⸺ the Fate and Risk Evaluation System for Contaminants (FRESCO™) ⸺ that builds on and updates the Training Range Environmental Evaluation and Characterization System (TREECS™, 2008-present) and the earlier Adaptive Risk Assessment Modeling System (ARAMS™, 2000-2007) to address the Army’s needs and further support the Operational Range Assessment Program.   
@@ -42,6 +44,9 @@ The FRESCO development process is built around the GitHub development platform (
 
 A snapshot of the contents of these repositories as of *xx/xx/2021* is available at *URL*. The snapshot is a ZIP archive file containing individual ZIP archive files for each repository.
 
+*Include issues in snapshot*
+
+
 The main repository for FRESCO is at https://github.com/LimnoTech/FRESCO, and includes GitHub Milestones, Projects, and Issues used to manage the development process. 
 
 The development technology stack is informed by the targeted delivery of FRESCO as a desktop program executable on a Microsoft Windows 10 workstation. The FRESCO user interace is primarily implemented in Microsoft C#.NET (UI), but in version 1.0 still includes some legacy components written in Microsoft Visuabl Basic 6 and in Microsoft or Borland C++. The primary development platform is therefore Microsoft Visual Studio 2019 (Community Edition) (***VERSION NUMBER***). Key dependencies are:
@@ -61,6 +66,8 @@ The various components (executables, libraries, help files, and data files) are 
 *History lesson -- FRAMES -> ARAMS -> TREECS*
 
 *GitHub Projects*
+
+*Match to requirements document*
 
 **==== LIST 0.1, 1.0, and 1.1 FUNCTIONALITY ISSUES**
 
@@ -106,6 +113,8 @@ Under this task, LimnoTech perform debugging of the framework, models, and compo
 
 *Intro text recapping scope of task*
 
+*provide access to installers and test projects*
+
 **==== LIST OF VALIDATION TESTS (TREECS PROJECTS RUN UNDER FRESCO AND COMPARED) HERE**
 
 
@@ -115,4 +124,4 @@ Under this task, LimnoTech perform debugging of the framework, models, and compo
 
 Abbreviated recap of Tasks 1-3
 
-Next steps - move to 1.1, hanging chads, test case study
+Next steps - move to 1.1, hanging chads, new case study, training and workshop
