@@ -1,3 +1,16 @@
+# Documentation of Activities
+## Delivery Order W912HZ20F0209/Contract W912HZ-20-D-0004
+
+## *Conduct FRESCO Framework & Model Debugging, Perform Model Evaluations and Validation*
+<br/>
+<br/>
+<br/>
+LimnoTech<br/>
+6/23/2021
+
+
+<div style="page-break-after: always;"></div>
+
 # Introduction
 The U.S. Army has a continuing need to understand human and environmental health risks associated with military-relevant compounds (MRCs) and with movement off-site of range munition constituents (MCs). The U.S. Army Engineer Research and Development Center is now developing a renewed product ⸺ the Fate and Risk Evaluation System for Contaminants (FRESCO™) ⸺ that builds on and updates the Training Range Environmental Evaluation and Characterization System (TREECS™, 2008-present) and the earlier Adaptive Risk Assessment Modeling System (ARAMS™, 2000-2007) to address the Army’s needs and further support the Operational Range Assessment Program.   
 

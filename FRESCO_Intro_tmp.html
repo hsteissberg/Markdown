@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FRESCO_Intro.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="documentation-of-activities">Documentation of Activities</h1>
+<h2 id="delivery-order-w912hz20f0209contract-w912hz-20-d-0004">Delivery Order W912HZ20F0209/Contract W912HZ-20-D-0004</h2>
+<h2 id="conduct-fresco-framework--model-debugging-perform-model-evaluations-and-validation"><em>Conduct FRESCO Framework &amp; Model Debugging, Perform Model Evaluations and Validation</em></h2>
+<br>
+<br>
+<br>
+LimnoTech<br>
+6/23/2021
+<div style="page-break-after: always;"></div>
+<h1 id="introduction">Introduction</h1>
+<p>The U.S. Army has a continuing need to understand human and environmental health risks associated with military-relevant compounds (MRCs) and with movement off-site of range munition constituents (MCs). The U.S. Army Engineer Research and Development Center is now developing a renewed product ⸺ the Fate and Risk Evaluation System for Contaminants (FRESCO™) ⸺ that builds on and updates the Training Range Environmental Evaluation and Characterization System (TREECS™, 2008-present) and the earlier Adaptive Risk Assessment Modeling System (ARAMS™, 2000-2007) to address the Army’s needs and further support the Operational Range Assessment Program.</p>
+<h2 id="understanding-risks">Understanding Risks</h2>
+<p>FRESCO™ extends ARAMS™ and TREECS™ capabilities for modeling fate and transport of MRCs and MCs to establish media concentrations for comparison to risk-based screening levels (Level 1 risk assessment). The extended capabilities are being implemented in concert with modernization of the supporting data, the codebase ⸺ including the underlying Framework for Risk Analysis in Multimedia Environmental Systems (FRAMES) modeling framework developed at the Department of Energy’s Pacific Northwest National Laboratory (PNNL) ⸺ and documentation to deliver a sustainable and reliable platform for MC/MRC risk assessment for the long term.</p>
+<h2 id="current-work">Current Work</h2>
+<p>Under delivery order W912HZ20F0209 (<em>Conduct FRESCO Framework &amp; Model Debugging, Perform Model Evaluations and Validation</em>) for contract W912HZ-20-D-0004, LimnoTech is responsible for four tasks:</p>
+<ul>
+<li>TASK 1. Conduct FRESCO™ Framework, Models, and Components Debugging.</li>
+<li>TASK 2. Conduct FRESCO™ Framework, Models and Components Testing and Evaluation.</li>
+<li>TASK 3. Conduct FRESCO™ Framework, Models, and Components Validation using Existing Army Datasets.</li>
+<li>TASK 4. Development of a Final Report documenting FRESCO™ Framework, Models, and Components.</li>
+</ul>
+<p>Deliverables for this order include updated code as well as documentation of the process and outcomes for debugging, evaluating, and validating that code. This report, which  provides the required documentation, is organized into the following sections:</p>
+<ul>
+<li>Overview of code development and management.</li>
+<li>Components and organization</li>
+<li>Task 1 – Debugging</li>
+<li>Task 2 – Test and evaluate</li>
+<li>Task 3 – Validate</li>
+<li>Summary and next steps</li>
+</ul>
+<div style="page-break-after: always;"></div>
+<h1 id="overview-of-code-development-and-management">Overview of Code Development and Management</h1>
+<p>The FRESCO development process is built around the GitHub development platform (https://github.com/about). GitHub repositories are used to store and version-track the source code and other components of the FRESCO system, and to organize debugginng and development activity. Because of the complexity of FRESCO and its components, the source code, help contens, and other files are distributed across the following individual repositories:</p>
+<p><strong>==== LIST OF REPOSITORIES HERE</strong></p>
+<p>A snapshot of the contents of these repositories as of <em>xx/xx/2021</em> is available at <em>URL</em>. The snapshot is a ZIP archive file containing individual ZIP archive files for each repository.</p>
+<p>The main repository for FRESCO is at https://github.com/LimnoTech/FRESCO, and includes GitHub Milestones, Projects, and Issues used to manage the development process.</p>
+<p>The development technology stack is informed by the targeted delivery of FRESCO as a desktop program executable on a Microsoft Windows 10 workstation. The FRESCO user interace is primarily implemented in Microsoft C#.NET (UI), but in version 1.0 still includes some legacy components written in Microsoft Visuabl Basic 6 and in Microsoft or Borland C++. The primary development platform is therefore Microsoft Visual Studio 2019 (Community Edition) (<em><strong>VERSION NUMBER</strong></em>). Key dependencies are:</p>
+<ul>
+<li>R</li>
+<li>MapWindows</li>
+<li>Spread FarPoint</li>
+<li><em><strong>OTHERS?</strong></em></li>
+</ul>
+<p>The various components (executables, libraries, help files, and data files) are combined into an installation package using Revenera InstallShield 2020 <em><strong>Rx</strong></em> Professional. The InstallShield configuration file is included as part of <em><strong>FRESCO REPO? SEPARATE REPO?</strong></em>.</p>
+<h1 id="components-and-organization">Components and organization</h1>
+<p><em>History lesson -- FRAMES -&gt; ARAMS -&gt; TREECS</em></p>
+<p><em>GitHub Projects</em></p>
+<p><strong>==== LIST 0.1, 1.0, and 1.1 FUNCTIONALITY ISSUES</strong></p>
+<p><em>Directory organization in install?</em></p>
+<h1 id="task-1-%E2%80%93-debugging">Task 1 – Debugging</h1>
+<p>Under this task, LimnoTech perform debugging of the framework, models, and components to ensure correct operation consistent with similar operations conducted with the predecessor model TREECS. Correct operation was evaluated for a number of individual actions and for complete scenarios in a manner informed by SME Mark Dortch. When incorect operations were identified, issues labeled as &quot;bug&quot; were created in GitHub and used to track mitigation and confirmation of corrections. The table below lists the debugging issues identified and corrected during the course of this delivery order.</p>
+<p><em>Table: FRESCO GitHub Issues tagged as &quot;bug&quot; (illustrative)</em></p>
+<table>
+<thead>
+<tr>
+<th>Issue #</th>
+<th>Issue Title</th>
+<th>User Name</th>
+<th>Labels</th>
+<th>State</th>
+<th>Milestone</th>
+<th>Date Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16</td>
+<td>New folk add an issue</td>
+<td>tslawecki</td>
+<td>bug</td>
+<td>open</td>
+<td>FRESCO v 0.1</td>
+<td>2020-12-23T18:01:06Z</td>
+</tr>
+<tr>
+<td>45</td>
+<td>Plotting hydrologic time series in Excel locks up</td>
+<td>tslawecki</td>
+<td>bug</td>
+<td>open</td>
+<td>FRESCO v 1.0</td>
+<td>2021-01-07T18:01:45Z</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Minor error warnings when save a .trp file in a directory with another .trp file</td>
+<td>MarkDortch</td>
+<td>bug</td>
+<td>open</td>
+<td>FRESCO v 1.0</td>
+<td>2021-01-14T17:15:52Z</td>
+</tr>
+<tr>
+<td>54</td>
+<td>WFF Surface Water and Aquifer Percent Plus Operator</td>
+<td>MarkDortch</td>
+<td>bug</td>
+<td>open</td>
+<td></td>
+<td>2021-01-30T19:38:15Z</td>
+</tr>
+<tr>
+<td>55</td>
+<td>Potential bug when linking MEPAS human exposure module to the TREECS source loading/Tier 2 soil model within FRAMES.</td>
+<td>MarkDortch</td>
+<td>bug</td>
+<td>open</td>
+<td></td>
+<td>2021-02-02T00:47:59Z</td>
+</tr>
+<tr>
+<td>56</td>
+<td>Potential bug associated with MEPAS source in soil model UI in FRESCO/FRAMES</td>
+<td>MarkDortch</td>
+<td>bug</td>
+<td>open</td>
+<td></td>
+<td>2021-02-02T00:53:56Z</td>
+</tr>
+<tr>
+<td>58</td>
+<td>Resurfacing SU issue?</td>
+<td>tslawecki</td>
+<td>bug</td>
+<td>open</td>
+<td>FRESCO v 1.0</td>
+<td>2021-02-18T12:44:38Z</td>
+</tr>
+<tr>
+<td>85</td>
+<td>Vadose and Aquifer Model UI</td>
+<td>tslawecki</td>
+<td>bug</td>
+<td>closed</td>
+<td></td>
+<td>2021-05-20T16:31:18Z</td>
+</tr>
+<tr>
+<td>86</td>
+<td>RECOVERY not running</td>
+<td>tslawecki</td>
+<td>bug</td>
+<td>open</td>
+<td></td>
+<td>2021-05-20T17:14:21Z</td>
+</tr>
+</tbody>
+</table>
+<h1 id="task-2-%E2%80%93-test-and-evaluate">Task 2 – Test and evaluate</h1>
+<p><em>Intro text recapping scope of task</em></p>
+<p><strong>==== LIST OF TESTING/EVALUATION ISSUES FROM GITHUB HERE</strong></p>
+<p><em>THESE ARE NON-BUG ISSUES</em></p>
+<h1 id="task-3-%E2%80%93-validate">Task 3 – Validate</h1>
+<p><em>Intro text recapping scope of task</em></p>
+<p><strong>==== LIST OF VALIDATION TESTS (TREECS PROJECTS RUN UNDER FRESCO AND COMPARED) HERE</strong></p>
+<h1 id="summary-and-next-steps">Summary and next steps</h1>
+<p>Abbreviated recap of Tasks 1-3</p>
+<p>Next steps - move to 1.1, hanging chads, test case study</p>
+
+</body>
+</html>
