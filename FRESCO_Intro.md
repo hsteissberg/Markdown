@@ -49,7 +49,7 @@ A snapshot of the contents of these repositories as of *xx/xx/2021* is available
 
 The main repository for FRESCO is at https://github.com/LimnoTech/FRESCO, and includes GitHub Milestones, Projects, and Issues used to manage the development process. 
 
-The development technology stack is informed by the targeted delivery of FRESCO as a desktop program executable on a Microsoft Windows 10 workstation. The FRESCO user interace is primarily implemented in Microsoft C#.NET (UI), but in version 1.0 still includes some legacy components written in Microsoft Visuabl Basic 6 and in Microsoft or Borland C++. The primary development platform is therefore Microsoft Visual Studio 2019 (Community Edition) (***VERSION NUMBER***). Key dependencies are:
+The development technology stack is informed by the targeted delivery of FRESCO as a desktop program executable on a Microsoft Windows 10 workstation. The FRESCO user interace is primarily implemented in Microsoft C#.NET (UI), but version 1.0 still includes some legacy components written in Microsoft Visual Basic 6 and in Microsoft or Borland C++. The primary development platform is therefore Microsoft Visual Studio 2019 (Community Edition) (***VERSION NUMBER***). Key dependencies are:
 
 * R
 * MapWindows
@@ -78,7 +78,7 @@ The various components (executables, libraries, help files, and data files) are 
 
 # Task 1 – Debugging 
 
-Under this task, LimnoTech perform debugging of the framework, models, and components to ensure correct operation consistent with similar operations conducted with the predecessor model TREECS. Correct operation was evaluated for a number of individual actions and for complete scenarios in a manner informed by SME Mark Dortch. When incorect operations were identified, issues labeled as "bug" were created in GitHub and used to track mitigation and confirmation of corrections. The table below lists the debugging issues identified and corrected during the course of this delivery order.
+Under this task, LimnoTech performed debugging of the framework, models, and components to ensure correct operation consistent with similar operations conducted with the predecessor model TREECS. Correct operation was evaluated for a number of individual actions and for complete scenarios in a manner informed by SME Mark Dortch. When incorrect operations were identified, issues labeled as "bug" were created in GitHub and used to track mitigation and confirmation of corrections. The table below lists the debugging issues identified and corrected during the course of this delivery order.
 
 
 *Table: FRESCO GitHub Issues tagged as "bug" (illustrative)*
