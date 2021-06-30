@@ -12,3 +12,8 @@ a, body {
     font-family: "Georgia", serif;
     font-size: 10pts;
 }
+a:link,
+span.MsoHyperlink {
+    color: #003399;
+    text-decoration: underline;
+}
