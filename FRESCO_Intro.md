@@ -39,16 +39,38 @@ Deliverables for this order include updated code as well as documentation of the
 <div style="page-break-after: always;"></div>
 
 # Overview of Code Development and Management
-The FRESCO development process is built around the GitHub development platform (https://github.com/about). GitHub repositories are used to store and version-track the source code and other components of the FRESCO system, and to organize debugginng and development activity. Because of the complexity of FRESCO and its components, the source code, help contens, and other files are distributed across the following individual repositories:
+The FRESCO development process is built around the GitHub development platform (<https://github.com/about>). GitHub repositories are used to store and version-track the source code and other components of the FRESCO system, and to organize debugginng and development activity. Because of the complexity of FRESCO and its components, the source code, help contens, and other files are distributed across the following individual repositories:
 
-**==== LIST OF REPOSITORIES HERE**
+|Description                                                                 |URL                                                         |
+|----------------------------------------------------------------------------|------------------------------------------------------------|
+|**UIs**                                                                         |                                                            |
+|FRESCO GUI                                                                  |https://github.com/LimnoTech/FRESCO                         |
+|HGCT and Tier II Soil Model GUIs; helpers                                   |https://github.com/u4epwjg9/Fresco_TTSM_HGCT                |
+|Tier II Soil Model GUI for Arctic Cases (combined with HGCT GUI and helpers)|https://github.com/u4epwjg9/FRESCO-TTSM-Arctic              |
+|Modernized FRAMES Uis                                                       |https://github.com/LimnoTech/RepSS.NET                      |
+|**Support Tools**                                                               |                                                            |
+|Arctic Inputs Helper                                                        |https://github.com/u4epwjg9/ArcticSoilModelGuiHelper        |
+|Multiple AOI Tool                                                           |https://github.com/u4epwjg9/FrescoMATv2                     |
+|Package/Unpackage Tool                                                      |https://github.com/u4epwjg9/FrescoPackageUnpackageTool      |
+|Grid Table Tool for HGCT                                                    |https://github.com/u4epwjg9/FrescoGridTableTool             |
+|Tier II to Advanced Tier II Conversion Tool                                 |https://github.com/u4epwjg9/ConvertFrescoProjectToFramesTool|
+|BMP AOI Export Treatment Module Output Viewer                               |https://github.com/u4epwjg9/BmpOutViewer                    |
+|**Database Editors**                                                            |                                                            |
+|Benchmark Database Editor                                                   |https://github.com/u4epwjg9/FrescoHealthBenchmarkEditor     |
+|Munitions Database Editor                                                   |https://github.com/u4epwjg9/FrescoMunitionsDatabaseEditor   |
+|**Reporting**                                                                   |                                                            |
+|Input Summary Report                                                        |https://github.com/u4epwjg9/TreecsCRsummaryReport           |
+|Help File                                                                   |                                                            |
+|FRESCO CHM source (HelpSmith XML format)                                    |https://github.com/LimnoTech/FRESCO-CHM                     |
+
+
 
 A snapshot of the contents of these repositories as of *xx/xx/2021* is available at *URL*. The snapshot is a ZIP archive file containing individual ZIP archive files for each repository.
 
 *Include issues in snapshot*
 
 
-The main repository for FRESCO is at https://github.com/LimnoTech/FRESCO, and includes GitHub Milestones, Projects, and Issues used to manage the development process. 
+The main repository for FRESCO is at <https://github.com/LimnoTech/FRESCO>, and includes GitHub Milestones, Projects, and Issues used to manage the development process. 
 
 The development technology stack is informed by the targeted delivery of FRESCO as a desktop program executable on a Microsoft Windows 10 workstation. The FRESCO user interace is primarily implemented in Microsoft C#.NET (UI), but version 1.0 still includes some legacy components written in Microsoft Visual Basic 6 and in Microsoft or Borland C++. The primary development platform is therefore Microsoft Visual Studio 2019 (Community Edition) (***VERSION NUMBER***). Key dependencies are:
 
